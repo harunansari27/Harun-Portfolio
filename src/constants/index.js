@@ -16,7 +16,7 @@ import {
   express,
   aws,
   mui,
-  
+
   gsap,
   framer,
   figma,
@@ -38,14 +38,10 @@ import {
 // Import Tekisky separately
 import tekisky from "../assets/company/tekisky.png";
 
-
 export const navLinks = [
-
-
   {
     id: "about",
     title: "About",
-    
   },
   {
     id: "work",
@@ -54,6 +50,12 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "resume",
+    title: "Resume",
+    external: true,
+    link: "/Harun Ansari 8052201243.pdf", // ✅ Add your resume file in /public folder 
   },
 ];
 
@@ -102,7 +104,7 @@ const technologies = [
     icon: framer,
   },
 
- 
+
   {
     name: "Three JS",
     icon: threejs,
@@ -148,7 +150,7 @@ const technologies = [
     name: "git",
     icon: git,
   },
- 
+
 
 ];
 
@@ -228,12 +230,12 @@ const testimonials = [
     image: thirdTestimonial,
   },
 
-    {
+  {
     testimonial:
       "During the Deloitte job simulation, Harun demonstrated great attention to detail and delivered high-quality solutions aligned with business needs.",
     name: " Virtual Project Feedback, ",
     designation: "Employee",
-    company: "Deloitte Simulation" ,
+    company: "Deloitte Simulation",
     image: secondTestimonial,
   },
 ];
